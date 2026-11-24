@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Department {
+    enum Dept {
+        CSE, ISE, ECE, MECH
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter department name: ");
+        String input = sc.nextLine().toUpperCase();
+
+        Dept selected = Dept.valueOf(input);
+        System.out.println("Selected Department: " + selected);
+
+        sc.close();
+    }
+}

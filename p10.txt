@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter marks for Subject 1: ");
+        String s1 = sc.nextLine();
+        System.out.print("Enter marks for Subject 2: ");
+        String s2 = sc.nextLine();
+        System.out.print("Enter marks for Subject 3: ");
+        String s3 = sc.nextLine();
+
+        Integer mark1 = Integer.valueOf(s1);
+        Integer mark2 = Integer.valueOf(s2);
+        Integer mark3 = Integer.valueOf(s3);
+
+        int total = mark1 + mark2 + mark3;
+
+        Integer totalObject = total;
+        int totalMarks = totalObject;
+
+        double average = totalMarks / 3.0;
+
+        System.out.println("\nTotal Marks: " + totalMarks);
+        System.out.println("Average Marks: " + average);
+
+        sc.close();
+    }
+}
